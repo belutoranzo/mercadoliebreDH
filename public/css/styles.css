@@ -7,14 +7,9 @@
     padding: 0px;
 }
 
-html, header, body {
-    margin: 0px;
-    padding: 0px;
-}
-
 body {
-    width: 100vw;
-    height: 100vw;
+    width: 100%;
+    height: 100%;
     letter-spacing: 0.03em;
     line-height: 2.5em;
     padding: 20px
@@ -22,7 +17,7 @@ body {
 
 header {
     background-color: #EAC926;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
@@ -42,12 +37,13 @@ header {
 .searchbar {
     display: flex;
     flex-wrap: wrap;
-    width: 50vw;
+    width: 50%;
     position: relative;
+    margin-left: 5%;
 }
 
 .searchbar2 {
-    width: 20vw;
+    width: 85%;
     height: 30px;
     border-radius: 2%;
     border: none;
@@ -58,11 +54,10 @@ header {
     box-sizing: border-box;
     cursor: pointer;
     width: 25px;
-    height: 25px;
+    height: 30px;
     border-radius: 2%;
     border: none;
     background-color: white;
-    height: 30px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -77,27 +72,29 @@ header {
     text-align: right;
     align-items: flex-start;
     justify-content: flex-end;
-    position: relative;
-    top: 2px;
-    right: -10px;
-    
+}
+
+.fa-hand-holding-dollar {
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .burger-menu {
     display: flex;
-    width: 50px;
-    height: 50px;
+    flex-wrap: wrap;
+    width: 40px;
+    height: 30px;
+    padding: 2px;
     background-color: #1259c3;
     color: white;
-    font-size: 25px;
+    font-size: 100%;
     text-align: center;
     border-radius: 10%;
     justify-content: center;
     align-items: center;
     align-self: flex-end;
-    position: absolute;
-    bottom: 20px;
-    left: 120px;
+    margin-top: 10%;
+    margin-left: 45%;
 }
 
 .navbar {
@@ -144,130 +141,115 @@ header {
     width: 100%;
     align-items: flex-end;
     padding: 10px;
-    justify-content: flex-end;
-    position: relative;
-    bottom: 0px;
-    right: 10px;
-    left: 650px;
+    margin-top: 10px;
+    margin-left: 50%;
+    justify-content: flex-end; 
 }
 
 .navbar-iconos a {
     text-decoration: none;
     color: black;
-    display: inline-block;
+    display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    text-align: justify;
     padding: 10px;
     align-items: flex-end;
-    position: relative;
+    justify-content: flex-end;
 }
 
 .navbar-iconos ul {
     list-style-type: none;
-    justify-content: space-between;
+    justify-content: flex-end;
+    align-items: flex-end;
     display: flex;
-    position: relative;
+    flex-wrap: wrap;
 }
 
 .navbar-iconos li {
-    display: inline;
-    justify-content: space-around;
-    overflow: auto;
+    justify-content: flex-end;
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    bottom: -10px;
-    right: 10px;
 }
 
 .navbar-iconos .fa-id-card {
-    display: inline;
     justify-content: space-around;
-    overflow: auto;
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    bottom: -23px;
-    right: 10px;
+    padding-left: 5px;
+    margin-top: 20px;
 }
 
 .navbar-iconos .fa-right-to-bracket {
-    display: inline;
     justify-content: space-around;
-    overflow: auto;
+    align-items: flex-end;
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    bottom: -23px;
-    right: 10px;
+    padding-left: 5px;
+    margin-top: 20px;
 }
 
 .navbar-iconos .fa-basket-shopping {
-    display: inline;
     justify-content: space-around;
-    overflow: auto;
     display: flex;
     flex-wrap: wrap;
-    position: relative;
-    bottom: -23px;
-    right: 10px;
+    padding-left: 5px;
+    margin-top: 20px;
 }
 
 .banner img {
-    width: 100vw;
+    width: 100%;
     margin: 0px;
     padding: 0px;
 }
 
 .ultima-visita h2 {
-    font-size: 24px;
+    font-size: 150%;
     color: #666;
-    margin-top: 60px;
+    margin-top: 100px;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 80px;
+    margin-left: 7%;
 }
 
 .ofertas h2 {
-    font-size: 24px;
+    font-size: 150%;
     color: #666;
     margin-top: -90px;
     display: flex;
     flex-wrap: wrap;
-    padding-left: 80px;
+    margin-left: 7%;
 }
 
 .mainContainer {
     display: flex;
     flex-wrap: wrap;
-    width: 100vw;
+    flex-direction: row;
+    width: 100%;
     align-items: center;
     justify-content: center;
     background-color: #ebebeb;
-    margin: 0px;
     margin-top: -30px;
 }
 
 .productos {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
-    margin: 20px;
-    margin-top: 0px;
-    width: 90vw;
+    margin: 5%;
+    width: 90%;
 }
 
 .productos img{
     margin-bottom: 1px;
-    width: 320px;
-    
+    width: 100%;
 }
 
 .container-precio {
     background-color: white;
-    width: 320px;
-    height: 150px;
+    width: 100%;
     margin-top: -10px;
     align-items: center;
     padding: 30px;
@@ -276,27 +258,62 @@ header {
 }
 
 .descuentos {
-    font-size: 16px;
+    font-size: 100%;
     color: #39b54a;
     background-color: white;
-    width: 80vw;
     align-items: center;
     line-height: 3px;
     width: 70%;
 }
 
 .precio {
-    font-size: 18px;
+    font-size: 100%;
     line-height: 2.5em;
     width: 30%;
 }
 
 .descripciones {
     z-index: 999;
-    font-size: 16px;
+    font-size: 150%;
     line-height: 2.5em;
     display: none;
     transition: all;
+}
+
+.card-cafetera {
+    width: 23%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1%;
+}
+
+.card-macbook {
+    width: 23%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1%;
+}
+
+.card-samsungGalaxy {
+    width: 23%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1%;
+}
+
+.card-smartTV {
+    width: 23%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1%;
 }
 
 .card-cafetera:hover .descripciones {
@@ -317,7 +334,6 @@ header {
 
 .card-cafetera, .card-macbook, .card-samsungGalaxy, .card-smartTV {
     transition: all;
-
 }
 .card-cafetera:hover {
     box-shadow: 0px 0px 10px 0px rgb(100, 100, 100);
@@ -362,12 +378,13 @@ header {
 
 footer {
     display:flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: column;
-    width: 100vw;  
+    width: 80%;
     margin-top: 30px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 100px;
     padding: 20px;
     line-height: 20px;
     justify-content: center;
@@ -375,16 +392,22 @@ footer {
     text-align: center;
 }
 
+.footer-icons h4 {
+    font-size: 100% ;
+}
+
 .footer1, .footer2, .footer3, .footer4 {
-    padding: 10px;
+    padding: 50px;
     justify-content: center;
-    width: 400px;
-    align-self: center;    
+    align-self: center;
+    align-items: center;
+    font-size: 90%;
+    line-height: 2em;
 }
 
 .fa-user-shield, .fa-credit-card, .fa-gift {
     z-index: 999;
-    font-size: 2em;
+    font-size: 300%;
     color: #1259c3;
     padding-bottom: 5px;
     justify-content: center;
@@ -404,9 +427,11 @@ footer {
 }
 
 .copyright {
-    font-size: 10px;
-    margin-top: 40px;
-    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 80%;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 
@@ -414,16 +439,33 @@ footer {
     .navbar, .navbar-iconos {
         display: none;
     }
-    .buy-label {
-        font-size: 16px;
+    
+    .card-cafetera, .card-macbook, .card-samsungGalaxy, .card-smartTV {
         display: flex;
         flex-wrap: wrap;
+        float: center;
+        width: 100%;
+        justify-content: space-around;
+        margin: 5px;
+    }
+    .searchbar-hand {
+        font-size: 90%;
         justify-content: center;
+        text-align: center;
+        margin-left: -80%;
+        margin-top: 30%;
+    }
+    .buy-label {
+        font-size: 90%;
+        justify-content: center;
+        text-align: center;
+        margin-left: auto;
+        margin-top: 0%;
     }
 }
 
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 481px) and (max-width: 991px) {
     .card-cafetera, .card-macbook, .card-samsungGalaxy, .card-smartTV {
         box-shadow: 0px 0px 10px 0px rgb(100, 100, 100);
     }
@@ -431,9 +473,32 @@ footer {
         display: none;
     }
     .card-cafetera, .card-macbook, .card-samsungGalaxy, .card-smartTV {
-        float: left;
-        width: 50vw;
+        display: flex;
+        flex-wrap: wrap;
+        float: center;
+        width: 45%;
         justify-content: space-around;
+        margin: 10px;
+    }
+    .searchbar {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        position: relative;
+        margin-left: 5%;
+    }
+    
+    .searchbar2 {
+        width: 87%;
+        height: 30px;
+        border-radius: 2%;
+        border: none;
+        padding-left: 10px;
+    }
+
+    .navbar, .navbar-iconos {
+        justify-content: center;
+        margin: auto;
     }
 }  
 
@@ -441,6 +506,13 @@ footer {
 @media (min-width: 992px) {
     .burger-menu {
         display: none;
+    }
+
+    .card-cafetera, .card-macbook, .card-samsungGalaxy, .card-smartTV {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;  
     }
     footer {
         display:flex;
